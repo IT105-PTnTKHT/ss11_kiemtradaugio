@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Use Case Diagram" id="usecase">
+    <mxGraphModel dx="1791" dy="973" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=14;" value="&amp;nbsp;Rikkei Stay System" vertex="1">
+          <mxGeometry height="360" width="300" x="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Check room availability" vertex="1">
+          <mxGeometry height="60" width="220" x="340" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Make a reservation" vertex="1">
+          <mxGeometry height="60" width="220" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Cancel a reservation" vertex="1">
+          <mxGeometry height="60" width="220" x="340" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;" target="uc1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;" target="uc2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;" target="uc3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cKrGwTSkfSvixICpwILI-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;div&gt;customer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Activity Diagram - Dat phong" id="activity">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="Chọn phòng và khoảng ngày đặt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="Kiểm tra điều kiện dữ liệu hợp lệ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dec1" value="Dữ liệu hợp lệ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="320" y="270" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="endInvalid" value="Kết thúc (dừng, báo lỗi dữ liệu)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="Kiểm tra trùng ngày trên phòng đã chọn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="380" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dec2" value="Trùng ngày đặt phòng?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="310" y="470" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="Từ chối đặt phòng&#xa;Thông báo lỗi: &quot;Trùng ngày đặt phòng&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end1" value="Kết thúc (Từ chối)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="620" y="580" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="end1label" value="Kết thúc" style="text;html=1;align=center;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="615" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" value="Tạo phiếu đặt phòng mới" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" value="Trả kết quả THÀNH CÔNG" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="680" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="385" y="760" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="end2label" value="Kết thúc" style="text;html=1;align=center;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="795" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="start" target="a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a1" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a2" target="dec1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="Hợp lệ" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="dec1" target="a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="Không hợp lệ" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="dec1" target="endInvalid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a3" target="dec2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s7" value="Có trùng ngày" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="dec2" target="a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s8" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a4" target="end1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s9" value="Không trùng ngày" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="dec2" target="a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s10" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a5" target="a6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s11" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="a6" target="end2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
